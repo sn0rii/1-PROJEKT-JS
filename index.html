@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Budget</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="main container">
+      <div class="logo"></div>
+      <header class="header" id="header">
+        <h1>Podaj swoje dochody i wydatki</h1>
+      </header>
+    </section>
+    <section class="budget-section">
+      <div class="income">
+        <h2 class="budget-header">Przychody</h2>
+        <form class="income-form">
+          <input
+            type="text"
+            class="input-text"
+            id="income-title"
+            placeholder="Nazwa przychodu"
+          />
+          <input
+            type="number"
+            class="input-amount"
+            id="income-amount"
+            placeholder="Kwota"
+          />
+          <button
+            type="button"
+            class="submit"
+            id="add-amount"
+            onclick="income();"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </form>
+        <h3 class="list-header">Lista przychodów</h3>
+        <ul class="income-list" id="income-list"></ul>
+
+        <h4 class="total-income" id="total-income">
+          Suma przychodów :<br />0 PLN
+        </h4>
+      </div>
+      <div class="cost">
+        <h2 class="budget-header">Wydatki</h2>
+        <form class="cost-form">
+          <input
+            type="text"
+            class="input-text"
+            id="cost-title"
+            placeholder="Nazwa wydatku"
+          />
+          <input
+            type="number"
+            class="input-amount"
+            id="cost-amount"
+            placeholder="Kwota"
+            min="1"
+          />
+          <button type="button" class="submit" id="add-cost" onclick="cost() ">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </form>
+        <h3 class="list-header">Lista wydatków</h3>
+        <ul class="cost-list" id="cost-list"></ul>
+        <h4 class="total-cost" id="total-cost">
+          Suma wydatków :<br />
+          0 PLN
+        </h4>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

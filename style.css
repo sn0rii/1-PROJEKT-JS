@@ -1,0 +1,218 @@
+/* :root {
+
+} */
+
+/* MAIN */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 10px auto;
+  max-width: 570px;
+}
+
+.logo {
+  background-image: url(./logo.jpg);
+  background-size: contain;
+  display: flex;
+  height: 150px;
+  width: 150px;
+  margin: 30px auto;
+  border-radius: 50%;
+}
+
+.header {
+  text-align: center;
+  font-size: 25px;
+  display: flex;
+  border: 1px black solid;
+  margin: 20px auto;
+}
+
+/* BUDGET SECTION */
+
+.budget-section {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  gap: 20px;
+}
+
+.budget-header {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* LIST */
+
+.income {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.income-form {
+  margin: 1px auto;
+  max-width: 300px;
+}
+
+.input-text {
+  max-width: 50%;
+}
+.input-amount {
+  max-width: 20%;
+}
+
+.cost-form {
+  margin: 1px auto;
+  max-width: 300px;
+}
+
+.cost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cost-text {
+  max-width: 50%;
+}
+.cost-amount {
+  max-width: 20%;
+}
+
+.list-header {
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.list-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5px;
+  border: 1px solid black;
+  text-align: center;
+  align-items: center;
+}
+
+.list-text {
+  margin: 2px;
+  inline-size: 180px;
+  overflow-wrap: break-word;
+}
+
+.income-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.total-income {
+  margin: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.total-cost {
+  margin: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cost-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.buttons {
+  margin: 2px auto;
+}
+
+/* BUTTONS */
+
+.submit {
+  margin: 5px 0;
+  background-color: orange;
+  color: white;
+  border-radius: 10px;
+}
+
+.cancelButton {
+  background-color: red;
+  color: white;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+}
+
+.edit {
+  background-color: blue;
+  color: white;
+}
+
+.saveButton {
+  background-color: green;
+  color: white;
+}
+
+.modal::backdrop {
+  background: linear-gradient(
+    132deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(230, 4, 50, 1) 100%
+  );
+  opacity: 0.5;
+}
+
+/* tablet */
+
+@media screen and (min-width: 640px) {
+  .container {
+    width: 760px;
+  }
+  .budget-section {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+  .income {
+    max-width: 50%;
+  }
+  .cost {
+    max-width: 50%;
+  }
+  .income-form {
+    max-width: none;
+  }
+
+  .cost-form {
+    max-width: none;
+  }
+}
+
+/* DESKTOP VERSION 
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+} */
