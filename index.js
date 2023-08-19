@@ -178,8 +178,8 @@ function deleteTransaction(index) {
 function totalIncomeAmount() {
   const totalIncomeAmount2 = document.getElementById("total-income");
   totalIncomeAmount2.innerHTML = "";
-  totalIncomeAmount2.innerHTML += `Łącznie przychodow: ${parseFloat(
-    incomeTotal
+  totalIncomeAmount2.innerHTML += `Łącznie przychodow: ${incomeTotal.toFixed(
+    2
   )} PLN`;
 }
 
